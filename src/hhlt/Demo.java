@@ -39,6 +39,7 @@ public class Demo {
             rs = stmt.executeQuery(sql);
 
             // 展开结果集数据库
+            //判断游标是否末尾
             while (rs.next()) {
                 // 通过字段检索
                 int id = rs.getInt("id");
